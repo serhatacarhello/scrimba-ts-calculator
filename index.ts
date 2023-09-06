@@ -1,10 +1,10 @@
-const button = document.querySelector('.button')
+const button = document.querySelector('.button') as HTMLButtonElement
 const firstInput = document.querySelector('#first-input') as HTMLInputElement
 const secondInput = document.querySelector('#second-input') as HTMLInputElement
-export const screen = document.querySelector('.screen')
+export const root = document.querySelector('#root') as HTMLDivElement
 
 function addNumbers(a: number, b: number) {
-  screen.innerHTML = (a + b).toString()
+  root.innerHTML = (a + b).toString()
 }
 
 button.addEventListener('click', () =>
